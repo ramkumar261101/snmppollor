@@ -1,0 +1,3 @@
+# Username, Auth type (Auth & Priv), Auth proto, Auth key, Priv proto, Priv key
+MD5DES,NOAUTH_NOPRIV,null,null,null,null
+admin,AUTH_PRIV,MD5,abcdefghijk,DES,zyxwvu

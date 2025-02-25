@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+
+# Setup variables
+if [ -z "${JVSC_EXEC}" ]; then
+    export JVSC_EXEC=/home/lokesh/Softwares/commons-daemon-1.0.15-src/src/native/unix/jsvc
+fi
+if [ -z "${JAVA_HOME}" ]; then
+    export JAVA_HOME=/home/lokesh/Softwares/jdk1.8.0_25/
+fi
+if [ -z "${COLLECTOR_USER}" ]; then
+    export COLLECTOR_USER=lokesh
+fi
+if [ -z "${MEM_OPTS}" ]; then
+    export MEM_OPTS="-Xmx512m -Xms512m"
+fi
+CLASS_PATH="../:../lib/*"
+CLASS=ai.netoai.collector.startup.CollectorMain
+PID=/tmp/collector.pid
+LOG_OUT=collector.out
+LOG_ERR=collector.err
+CWD=`pwd`
+
+do_exec()
+{
+    $JVSC_EXEC -cwd $CWD -home "$JAVA_HOME" $MEM_OPTS -cp $CLASS_PATH -user $COLLECTOR_USER -outfile $LOG_OUT -errfile $LOG_ERR -pidfile $PID $1 $CLASS "../conf/collector.properties"
+}
+
+case "$1" in
+    start)
+        do_exec
+            ;;
+    stop)
+        do_exec "-stop"
+            ;;
+    restart)
+        if [ -f "$PID" ]; then
+            do_exec "-stop"
+            do_exec
+        else
+            echo "SNMP Adapter not running, will do nothing"
+            exit 1
+        fi
+            ;;
+    *)
+            echo "usage: service {start|stop|restart}" >&2
+            exit 3
+            ;;
+esac

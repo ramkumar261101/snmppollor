@@ -1,0 +1,669 @@
+{
+    "deviceTypes": {
+        "cisco-asr-9904": {
+            "deviceId": "cisco-asr-9904",
+            "deviceModel": "Cisco ASR 9904 Router",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp":".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.1762.*"
+                }
+            ]
+        },
+        "juniper-mx-480": {
+            "deviceId": "juniper-mx-480",
+            "deviceModel": "Juniper MX 480 Router",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.2636\\.1\\.1\\.1\\.1\\.25.*"
+                }
+            ]
+        },
+        "cisco-catalyst-c9300-48uxm": {
+            "deviceId": "cisco-catalyst-c9300-48uxm",
+            "deviceModel": "Cisco Catalyst C9300-48UXM",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.2442.*"
+                }
+            ]
+        },
+        "cisco-1100-8p-isr": {
+            "deviceId": "cisco-1100-8p-isr",
+            "deviceModel": "Cisco 1100-8P ISR",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.2456.*"
+                }
+            ]
+        },
+        "juniper-ptx-1000136-mr": {
+            "deviceId": "juniper-ptx-1000136-mr",
+            "deviceModel": "Juniper PTX1000136MR",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.2636\\.1\\.1\\.1\\.2\\.555.*"
+                }
+            ]
+        },
+        "juniper-ptx-10008": {
+            "deviceId": "juniper-ptx-10008",
+            "deviceModel": "Juniper PTX10008",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.2636\\.1\\.1\\.1\\.1\\.147.*"
+                }
+            ]
+        },
+        "juniper-ptx-10016": {
+            "deviceId": "juniper-ptx-10016",
+            "deviceModel": "Juniper PTX10016",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.2636\\.1\\.1\\.1\\.1\\.150.*"
+                }
+            ]
+        },
+        "juniper-mx-2020": {
+            "deviceId": "juniper-mx-2020",
+            "deviceModel": "Juniper MX2020",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.2636\\.1\\.1\\.1\\.2\\.93.*"
+                }
+            ]
+        },
+        "cisco-9004": {
+            "deviceId": "cisco-9004",
+            "deviceModel": "Cisco 9004",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.424.*"
+                }
+            ]
+        },
+        "juniper-acx-6350": {
+            "deviceId": "juniper-acx-6350",
+            "deviceModel": "Juniper ACX6350",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.2636\\.1\\.1\\.1\\.1\\.160.*"
+                }
+            ]
+        },
+        "cisco-2611-m": {
+            "deviceId": "cisco-2611-m",
+            "deviceModel": "Cisco 2611M",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.419.*"
+                }
+            ]
+        },
+        "cisco-c1840": {
+            "deviceId": "cisco-c1840",
+            "deviceModel": "Cisco C1840",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.900.*"
+                }
+            ]
+        },
+        "cisco-isr-4331-k9": {
+            "deviceId": "cisco-isr-4331-k9",
+            "deviceModel": "Cisco ISR 4331/K9",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.2068.*"
+                }
+            ]
+        },
+        "juniper-e120": {
+            "deviceId": "juniper-e120",
+            "deviceModel": "Juniper E120",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.4874\\.1\\.1\\.1\\.6\\.2.*"
+                }
+            ]
+        },
+        "cisco-rpsadptrc2921c2951": {
+            "deviceId": "cisco-rpsadptrc2921c2951",
+            "deviceModel": "Cisco RpsAdptrC2921C2951",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.1083.*"
+                }
+            ]
+        },
+        "cisco-2801-ck9": {
+            "deviceId": "cisco-2801-ck9",
+            "deviceModel": "Cisco 2801CK9",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.1237.*"
+                }
+            ]
+        },
+        "cisco-2811ve": {
+            "deviceId": "cisco-2811ve",
+            "deviceModel": "Cisco 2811ve",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.1370.*"
+                }
+            ]
+        },
+        "cisco-2821": {
+            "deviceId": "cisco-2821",
+            "deviceModel": "Cisco 2821",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.577.*"
+                }
+            ]
+        },
+        "cisco-2851-ck9": {
+            "deviceId": "cisco-2851-ck9",
+            "deviceModel": "Cisco 2851CK9",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.1240.*"
+                }
+            ]
+        },
+        "cisco-2610m": {
+            "deviceId": "cisco-2610m",
+            "deviceModel": "Cisco 2610M",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.418.*"
+                }
+            ]
+        },
+        "cisco-2620": {
+            "deviceId": "cisco-2620",
+            "deviceModel": "Cisco 2620",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.208.*"
+                }
+            ]
+        },
+        "cisco-2650": {
+            "deviceId": "cisco-2650",
+            "deviceModel": "Cisco 2650",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.319.*"
+                }
+            ]
+        },
+        "cisco-pwr-c1941-c2901-ac": {
+            "deviceId": "cisco-pwr-c1941-c2901-ac",
+            "deviceModel": "Cisco PwrC1941C2901AC",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.1078.*"
+                }
+            ]
+        },
+        "cisco-pwr-c2921-c2951-dc": {
+            "deviceId": "cisco-pwr-c2921-c2951-dc",
+            "deviceModel": "Cisco PwrC2921C2951DC",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.1081.*"
+                }
+            ]
+        },
+        "cisco-catalyst-3900": {
+            "deviceId": "cisco-catalyst-3900",
+            "deviceModel": "Cisco Catalyst 3900",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.5\\.33.*"
+                }
+            ]
+        },
+        "dell-emc-n3024et-on": {
+            "deviceId": "dell-emc-n3024et-on",
+            "deviceModel": "Dell EMC N3024ET-ON",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.674\\.10895\\.3088.*"
+                }
+            ]
+        },
+        "fortigate-firewall-200b": {
+            "deviceId": "fortigate-firewall-200b",
+            "deviceModel": "Fortigate Firewall 200B",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.12356\\.101\\.1\\.2003.*"
+                }
+            ]
+        },
+        "cisco-catalyst-2960-24-s": {
+            "deviceId": "cisco-catalyst-2960-24-s",
+            "deviceModel": "Cisco Catalyst 2960-24-S",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.1757.*"
+                }
+            ]
+        },
+        "cisco-cgs-2520-24tc": {
+            "deviceId": "cisco-cgs-2520-24tc",
+            "deviceModel": "Cisco CGS-2520-24TC",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.1245.*"
+                }
+            ]
+        },
+        "cisco-catalyst-3110g-s": {
+            "deviceId": "cisco-catalyst-3110g-s",
+            "deviceModel": "Cisco Catalyst 3110G-S",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.909.*"
+                }
+            ]
+        },
+        "cisco-meraki-ms225-24p": {
+            "deviceId": "cisco-meraki-ms225-24p",
+            "deviceModel": "Cisco Meraki MS225-24P",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.29671\\.2\\.329.*"
+                }
+            ]
+        },
+        "cisco-asr-1006-x": {
+            "deviceId": "cisco-asr-1006-x",
+            "deviceModel": "Cisco ASR 1006-X",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.2143.*"
+                }
+            ]
+        },
+        "cisco-asr-1009-x": {
+            "deviceId": "cisco-asr-1009-x",
+            "deviceModel": "Cisco ASR 1009-X",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.2144.*"
+                }
+            ]
+        },
+        "cisco-asr9006": {
+            "deviceId": "cisco-asr9006",
+            "deviceModel": "Cisco ASR9006",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.1018.*"
+                }
+            ]
+        },
+        "cisco-asr9010": {
+            "deviceId": "cisco-asr9010",
+            "deviceModel": "Cisco ASR9010",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.1017.*"
+                }
+            ]
+        },
+        "cisco-asr-9910": {
+            "deviceId": "cisco-asr-9910",
+            "deviceModel": "Cisco ASR 9910",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.2390.*"
+                }
+            ]
+        },
+        "cisco-asr-9922": {
+            "deviceId": "cisco-asr-9922",
+            "deviceModel": "Cisco ASR 9922",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.1640.*"
+                }
+            ]
+        },
+        "cisco-vedge-1000-ac": {
+            "deviceId": "cisco-vedge-1000-ac",
+            "deviceModel": "Cisco vEdge-1000-AC",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.41916\\.3\\.2\\.4.*"
+                }
+            ]
+        },
+        "cisco-4351-isr": {
+            "deviceId": "cisco-4351-isr",
+            "deviceModel": "Cisco 4351 ISR",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.1999.*"
+                }
+            ]
+        },
+        "cisco-catalyst-c930024t": {
+            "deviceId": "cisco-catalyst-c930024t",
+            "deviceModel": "Cisco Catalyst c930024T",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.2435.*"
+                }
+            ]
+        },
+        "cisco-catalyst-c930048t": {
+            "deviceId": "cisco-catalyst-c930048t",
+            "deviceModel": "Cisco Catalyst c930048T",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.2439.*"
+                }
+            ]
+        },
+        "cisco-catalyst-c930024u": {
+            "deviceId": "cisco-catalyst-c930024u",
+            "deviceModel": "Cisco Catalyst c930024U",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.2437.*"
+                }
+            ]
+        },
+        "cisco-4431-isr": {
+            "deviceId": "cisco-4431-isr",
+            "deviceModel": "Cisco 4431 ISR",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.1935.*"
+                }
+            ]
+        },
+        "juniper-ex3400": {
+            "deviceId": "juniper-ex3400",
+            "deviceModel": "Juniper EX3400",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.2636\\.1\\.1\\.1\\.4\\.131\\.3.*"
+                }
+            ]
+        },
+        "juniper-ex2300": {
+            "deviceId": "juniper-ex2300",
+            "deviceModel": "Juniper EX2300",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.2636\\.1\\.1\\.1\\.4\\.132\\.6.*"
+                }
+            ]
+        },
+        "cisco-4451-x-isr": {
+            "deviceId": "cisco-4451-x-isr",
+            "deviceModel": "Cisco 4451-X ISR",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.1707.*"
+                }
+            ]
+        },
+        "juniper-acx710": {
+            "deviceId": "juniper-acx710",
+            "deviceModel": "Juniper ACX710",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.2636\\.1\\.1\\.1\\.1\\.162.*"
+                }
+            ]
+        },
+        "juniper-acx5448": {
+            "deviceId": "juniper-acx5448",
+            "deviceModel": "Juniper ACX5448",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.2636\\.1\\.1\\.1\\.2\\.148.*"
+                }
+            ]
+        },
+        "cisco-asr-1001-x": {
+            "deviceId": "cisco-asr-1001-x",
+            "deviceModel": "Cisco ASR 1001-X",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.1861.*"
+                }
+            ]
+        },
+        "cisco-asr-1002-x": {
+            "deviceId": "cisco-asr-1002-x",
+            "deviceModel": "Cisco ASR 1002-X",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.1525.*"
+                }
+            ]
+        },
+        "cisco-asr-1004": {
+            "deviceId": "cisco-asr-1004",
+            "deviceModel": "Cisco ASR 1004",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.924.*"
+                }
+            ]
+        },
+        "cisco-asr-9013": {
+            "deviceId": "cisco-asr-9013",
+            "deviceModel": "Cisco ASR 9013",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.1017.*"
+                }
+            ]
+        },
+        "cisco-nexus-7010": {
+            "deviceId": "cisco-nexus-7010",
+            "deviceModel": "Cisco Nexus 7010",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.12\\.3\\.1\\.3\\.612.*"
+                }
+            ]
+        },
+        "cisco-asr-9006": {
+            "deviceId": "cisco-asr-9006",
+            "deviceModel": "Cisco ASR 9006",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.1018.*"
+                }
+            ]
+        },
+        "cisco-c3560cx12-tcs": {
+            "deviceId": "cisco-c3560cx12-tcs",
+            "deviceModel": "Cisco C3560CX12 TCS",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.2133.*"
+                }
+            ]
+        },
+        "cisco-asr-9901": {
+            "deviceId": "cisco-asr-9901",
+            "deviceModel": "Cisco ASR 9901",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.2658.*"
+                }
+            ]
+        },
+        "cisco-asr-9902": {
+            "deviceId": "cisco-asr-9902",
+            "deviceModel": "Cisco ASR 9902",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.1762.*"
+                }
+            ]
+        },
+        "cisco-asr-9903": {
+            "deviceId": "cisco-asr-9903",
+            "deviceModel": "Cisco ASR 9903",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.2572.*"
+                }
+            ]
+        },
+        "cisco-isr-4331": {
+            "deviceId": "cisco-isr-4331",
+            "deviceModel": "Cisco ISR 4331",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.2068.*"
+                }
+            ]
+        },
+        "cisco-7401asr": {
+            "deviceId": "cisco-7401asr",
+            "deviceModel": "Cisco 7401 ASR",
+            "ruleList": [
+                {
+                    "opType": "SNMP_GET",
+                    "oid": "1.3.6.1.2.1.1.2.0",
+                    "regexp": ".*1\\.3\\.6\\.1\\.4\\.1\\.9\\.1\\.403.*"
+                }
+            ]
+        },
+        "generic-snmp": {
+            "deviceId": "generic-snmp",
+            "deviceModel": "Generic SNMP Device",
+            "ruleList": []
+        }
+    }
+}

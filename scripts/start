@@ -1,0 +1,8 @@
+#!/bin/bash
+
+ulimit -n 65536
+
+cd /opt/SnmpCollector/bin/
+nohup java -DnmsConfig.nms_system=/opt/SnmpCollector/conf/nms_system.properties -DnmsConfig.collector=/opt/SnmpCollector/conf/collector.properties -DtenantId=defaulttenant -Dcollector.log4j=/opt/SnmpCollector/conf/log4j.properties -Dplatform.home=/opt/SnmpCollector -Xmx512m -Xms512m -cp /opt/SnmpCollector/lib/SnmpCollector-full.jar:/opt/SnmpCollector/conf/ ai.netoai.collector.startup.CollectorMain /opt/SnmpCollector/conf/collector.properties &
+
+sleep 100000000
