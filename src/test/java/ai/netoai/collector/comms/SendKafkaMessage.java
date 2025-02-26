@@ -45,7 +45,7 @@ public class SendKafkaMessage {
     }
 
     private static void sendMessage(ConfigMessage message) {
-        String broker = "192.168.1.9:9092";
+        String broker = "localhost:9092";
         Properties props = new Properties();
         props.put("bootstrap.servers", broker);
         props.put("acks", "all");
