@@ -11,7 +11,7 @@ RUN mkdir -p /opt/snmp-poller/conf && \
 COPY src/main/resources/collector.properties /opt/snmp-poller/conf
 COPY src/main/resources/log4j.properties /opt/snmp-poller/conf
 COPY src/main/resources/discoverytree.json /opt/snmp-poller/conf      
-COPY final-profiles/* /opt/snmp-poller/final-profiles
+COPY final-profiles/* /opt/snmp-poller/final-profiles/
 COPY target/snmp-poller-full.jar /opt/snmp-poller/
 
 #ENTRYPOINT ["sleep", "1000000000"]
