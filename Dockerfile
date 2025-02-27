@@ -14,6 +14,8 @@ COPY src/main/resources/discoverytree.json /opt/snmp-poller/conf
 COPY final-profiles/* /opt/snmp-poller/final-profiles/
 COPY target/snmp-poller-full.jar /opt/snmp-poller/
 
-#ENTRYPOINT ["sleep", "1000000000"]
+EXPOSE 8080
+
 WORKDIR "/opt/snmp-poller"
-ENTRYPOINT ["/bin/bash", "-c", "java -cp /opt/snmp-poller/snmp-poller-full.jar -Dcollector.log4j=/opt/snmp-poller/conf/log4j.properties -DcollectorSettings=/opt/snmp-poller/conf/collector.properties ai.netoai.collector.startup.CollectorMain"]
+
+ENTRYPOINT ["/bin/bash", "-c", "java -cp /opt/snmp-poller/snmp-poller-full.jar -Dcollector.log4j=/opt/snmp-poller/conf/log4j.properties -DcollectorSettings=/opt/snmp-poller/conf/collector.properties ai.netoai.collector.startup.CollectorMain & java -cp /opt/snmp-poller/snmp-poller-full.jar ai.netoai.collector.AppServer"]

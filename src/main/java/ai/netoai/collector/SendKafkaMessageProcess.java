@@ -1,10 +1,14 @@
-package ai.netoai.collector.comms;
+package ai.netoai.collector;
 
-import ai.netoai.collector.Constants;
+
 import ai.netoai.collector.model.*;
 import ai.netoai.collector.settings.KafkaTopicSettings;
-import ai.netoai.collector.settings.SettingsManager;
 import com.google.common.collect.Lists;
+import jakarta.ws.rs.Consumes;
+import jakarta.ws.rs.POST;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.MediaType;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 
@@ -13,18 +17,18 @@ import java.util.Properties;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
-public class SendKafkaMessage {
-
-    public static void main(String[] args) {
-        //sendDiscoveryTaskMessage();
-//        sendTopologyDiscoveryTaskMessage();
-    }
-
-    private static void sendDiscoveryTaskMessage() {
-        System.out.println("Sending a kafka message for discovery task");
+@Path("/kafka")
+@Produces(MediaType.APPLICATION_JSON)
+@Consumes(MediaType.APPLICATION_JSON)
+public class SendKafkaMessageProcess {
+    @POST
+    @Path("/sendDiscoveryTaskMessage")
+    public void sendDiscoveryTaskMessage() {
+        System.out.println("Sending a Kafka message for discovery task");
         ConfigMessage discoveryMessage = createDiscoveryTaskMessage();
         sendMessage(discoveryMessage);
-        System.out.println("Sent a kafka message for discovery task");
+        System.out.println("Sent a Kafka message for discovery task");
+
         try {
             TimeUnit.SECONDS.sleep(10);
         } catch (InterruptedException e) {
@@ -32,17 +36,21 @@ public class SendKafkaMessage {
         }
     }
 
-    private static void sendTopologyDiscoveryTaskMessage() {
-        System.out.println("Sending a kafka message for topology discovery task");
+    @POST
+    @Path("/sendTopologyDiscoveryTaskMessage")
+    public void sendTopologyDiscoveryTaskMessage() {
+        System.out.println("Sending a Kafka message for topology discovery task");
         ConfigMessage discoveryMessage = createTopologyDiscoveryTaskMessage();
         sendMessage(discoveryMessage);
-        System.out.println("Sent a kafka message for topology discovery task");
+        System.out.println("Sent a Kafka message for topology discovery task");
+
         try {
             TimeUnit.SECONDS.sleep(10);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
     }
+
 
     private static void sendMessage(ConfigMessage message) {
         String broker = "localhost:9092";
