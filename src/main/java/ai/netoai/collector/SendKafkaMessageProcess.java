@@ -51,6 +51,11 @@ public class SendKafkaMessageProcess {
         }
     }
 
+    @POST
+    @Path("/test")
+    public String test() {
+        return "Topology discovery task message sent successfully";
+    }
 
     private static void sendMessage(ConfigMessage message) {
         String broker = "localhost:9092";
