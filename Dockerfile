@@ -1,4 +1,4 @@
-FROM openjdk:8-oraclelinux8
+FROM openjdk:11-oraclelinux8
 
 RUN microdnf update && \
     microdnf install vi iputils telnet && \
