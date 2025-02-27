@@ -2,7 +2,7 @@
 
 ### Prerequisites for Simulator and SNMP Poller
 
-1. Install openJDK 8
+1. Install openJDK 11
 2. Install python3 (3.10 or 3.11)
 3. Install apache maven build tool.
 4. Preferred OS for simulation would be CentOS/RHEL/Fedora
